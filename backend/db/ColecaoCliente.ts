@@ -1,8 +1,9 @@
 import Cliente from "../../src/core/Cliente";
 import ClienteRepositorio from "../../src/core/ClienteRepositorio";
-import firebase from "../config";
+import firebase from "../config"
+import 'firebase/firestore'
 
-export default class colecaoCliente implements ClienteRepositorio{
+export default class ColecaoCliente implements ClienteRepositorio{
 
     #conversor = {
         toFirestore(cliente: Cliente){

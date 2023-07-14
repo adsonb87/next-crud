@@ -6,21 +6,23 @@ import Cliente from '../core/Cliente'
 import Botao from '../components/Botao'
 import Formulario from '../components/Formulario'
 import { useState } from "react"
+import ClienteRepositorio from '../core/ClienteRepositorio'
+import ColecaoCliente from '../../backend/db/ColecaoCliente'
+import { useEffect } from "react"
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const repo: ClienteRepositorio = new ColecaoCliente()
   
   const [visivel, setVisivel] = useState<'tabela' | 'form'>('tabela')
   const [cliente, setCliente] = useState<Cliente>(Cliente.vazio())
+  const [clientes, setClientes] = useState<Cliente[]>([]) 
 
-
-
-  const clientes = [
-    new Cliente('Adson',35,'1'),
-    new Cliente('João',35,'2'),
-    new Cliente('José',35,'3')
-  ]
+  useEffect(() => {
+    repo.obterTodos().then(setClientes)
+  }, [])
 
   function clienteSelecionado(cliente: Cliente){
     setCliente(cliente)
