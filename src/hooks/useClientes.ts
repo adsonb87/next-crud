@@ -1,10 +1,8 @@
-import ColecaoCliente from "../backend/db/ColecaoCliente"
+import ColecaoCliente from "../backend/db/ColecaoCliente copy"
 import Cliente from "@/core/Cliente"
 import ClienteRepositorio from "@/core/ClienteRepositorio"
 import { useEffect, useState } from "react"
 import useTabelaOuForm from "./useTabelaOuForm"
-import db from "../backend/config"
-import { getDocs, collection } from 'firebase/firestore'
 
 export default function useClientes(){
   const repo: ClienteRepositorio = new ColecaoCliente()

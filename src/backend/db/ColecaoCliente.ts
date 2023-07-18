@@ -1,6 +1,6 @@
 import Cliente from "../../core/Cliente";
 import ClienteRepositorio from "../../core/ClienteRepositorio";
-import firebase from "../config"
+import firebase from "../db"
 import 'firebase/firestore'
 
 export default class ColecaoCliente implements ClienteRepositorio{
