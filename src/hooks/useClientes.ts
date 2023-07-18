@@ -1,4 +1,4 @@
-import ColecaoCliente from "../backend/db/ColecaoCliente copy"
+import ColecaoCliente from "../backend/ColecaoCliente"
 import Cliente from "@/core/Cliente"
 import ClienteRepositorio from "@/core/ClienteRepositorio"
 import { useEffect, useState } from "react"
