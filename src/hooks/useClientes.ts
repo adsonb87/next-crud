@@ -15,10 +15,12 @@ export default function useClientes(){
   useEffect(obterTodos,[])
 
   function obterTodos(){
+    /*
     repo.obterTodos().then(clientes => {
       setClientes(clientes)
       exibirTabela()
     })
+    */
   }
 
   function clienteSelecionado(cliente: Cliente){
@@ -36,7 +38,7 @@ export default function useClientes(){
   }
 
   function salvarCliente(cliente: Cliente){
-    console.log(cliente)
+    repo.salvar(cliente)
     exibirTabela()
   }
 
