@@ -1,4 +1,4 @@
-import { DocumentSnapshot, QueryDocumentSnapshot } from "firebase/firestore";
+import { DocumentSnapshot, QueryDocumentSnapshot, addDoc, doc, getDoc } from "firebase/firestore";
 import Cliente from "../../core/Cliente";
 import ClienteRepositorio from "../../core/ClienteRepositorio";
 import db from "../config copy";
@@ -8,7 +8,7 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 export default class ColecaoCliente implements ClienteRepositorio{
 
     async salvar(cliente: Cliente): Promise<Cliente> {
-        console.log(cliente)
+       
         return Cliente.vazio()
     }
 
