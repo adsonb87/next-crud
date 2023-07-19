@@ -1,4 +1,4 @@
-import { CriarUsuarioController } from "@/controllers/CriarUsuarioController";
+import { CriarUsuarioController } from "../../controllers/CriarUsuarioController";
 import Cliente from "../core/Cliente";
 import ClienteRepositorio from "../core/ClienteRepositorio";
 

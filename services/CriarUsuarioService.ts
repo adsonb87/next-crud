@@ -1,5 +1,5 @@
 import Cliente from "@/core/Cliente";
-import prisma from "../prisma/index";
+import prisma from "../src/prisma/index";
 
 class CriarUsuarioService{
     async execute(cliente: Cliente){

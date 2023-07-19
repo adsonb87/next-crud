@@ -1,6 +1,5 @@
 import Cliente from "@/core/Cliente";
-import { CriarUsuarioService } from "@/services/CriarUsuarioService";
-import exp from "constants";
+import { CriarUsuarioService } from "../services/CriarUsuarioService";
 
 class CriarUsuarioController{
     async handle (cliente: Cliente){
