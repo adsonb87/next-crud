@@ -1,5 +1,5 @@
-import Cliente from "../../src/core/Cliente";
-import ClienteRepositorio from "../../src/core/ClienteRepositorio";
+import Cliente from "../../core/Cliente";
+import ClienteRepositorio from "../../core/ClienteRepositorio";
 import firebase from "../config"
 import 'firebase/firestore'
 

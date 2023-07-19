@@ -7,7 +7,7 @@ import Botao from '../components/Botao'
 import Formulario from '../components/Formulario'
 import { useState } from "react"
 import ClienteRepositorio from '../core/ClienteRepositorio'
-import ColecaoCliente from '../../backend/db/ColecaoCliente'
+import ColecaoCliente from '../backend/db/ColecaoCliente copy'
 import { useEffect } from "react"
 
 
